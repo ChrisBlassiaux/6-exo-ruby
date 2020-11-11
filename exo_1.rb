@@ -7,7 +7,7 @@ end
 def perform
   puts 'Entrez un mot :'
   print '> '
-  word = gets.chomp
+  word = gets.chomp.downcase
   puts isPalindrome?(word) ? 'Le mot saisie est un palindrome' : 'Le mot saisie n’est pas un palindrome'
 end
 
